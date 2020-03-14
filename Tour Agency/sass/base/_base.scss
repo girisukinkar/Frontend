@@ -1,0 +1,19 @@
+/* universal selector for reset */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*It will become easier to set the REM sizes as we have to just divide it by 10 as 1rem = 10px
+    also when user zooms in or out to adjust their sight it will be easily adjustable
+  */
+}
+
+body {
+  box-sizing: border-box;
+}

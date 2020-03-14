@@ -1,0 +1,53 @@
+/*How to use Pseudo elements*/
+
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($black, 0.2); /*X Y Blur Color*/
+    transform: translateY(-0.3rem);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.2); /*X Y Blur Color*/
+  }
+
+  &--white {
+    color: $grey-dark;
+    background-color: $white;
+    &::after {
+      content: "";
+      background-color: $white;
+    }
+  }
+
+  &::after {
+    border-radius: 10rem;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.2s;
+  }
+}

@@ -1,5 +1,5 @@
-/* universal selector for reset */
 /*Colors end*/
+/* universal selector for reset */
 *,
 *::after,
 *::before {
@@ -14,59 +14,7 @@ html {
   */ }
 
 body {
-  padding: 3rem;
-  /* as we are speicifying font-family in body it will be inherited by all child elements throughout  */
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777;
   box-sizing: border-box; }
-
-.header {
-  position: relative;
-  /* it'll be always 95% of viewport height */
-  height: 95vh;
-  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  /*it will always try to fit to the element of the box*/
-  background-position: top;
-  /*tells image to fix top and crop of other places*/
-  /* Clip path */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem;
-    /*Specify the height and width will set automatically and vice versa*/ }
-  .header__text-box {
-    position: absolute;
-    left: 50%;
-    /*top and left is in relation to the parent element*/
-    top: 40%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    /*this is in the relation of the element itself*/ }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-in-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-in-out; }
 
 /* X goes left to right and Y goes top to bottom */
 @keyframes moveInLeft {
@@ -100,6 +48,33 @@ body {
   100% {
     transform: translate(0);
     opacity: 100%; } }
+
+body {
+  padding: 3rem;
+  /* as we are speicifying font-family in body it will be inherited by all child elements throughout  */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-in-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-in-out; }
 
 /*How to use Pseudo elements*/
 .btn:link, .btn:visited {
@@ -146,3 +121,30 @@ body {
   top: 0;
   z-index: -1;
   transition: all 0.2s; }
+
+.header {
+  position: relative;
+  /* it'll be always 95% of viewport height */
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  /*it will always try to fit to the element of the box*/
+  background-position: top;
+  /*tells image to fix top and crop of other places*/
+  /* Clip path */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem;
+    /*Specify the height and width will set automatically and vice versa*/ }
+  .header__text-box {
+    position: absolute;
+    left: 50%;
+    /*top and left is in relation to the parent element*/
+    top: 40%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    /*this is in the relation of the element itself*/ }
