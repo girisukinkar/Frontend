@@ -76,6 +76,26 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-in-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 2px; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewY(5deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom {
+  margin-bottom: 8rem; }
+
 /*How to use Pseudo elements*/
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -151,8 +171,7 @@ body {
 
 .row {
   margin: 0 auto;
-  max-width: 114rem;
-  background: #eee; }
+  max-width: 114rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -160,7 +179,6 @@ body {
     display: table;
     clear: both; }
   .row [class^="col-"] {
-    background-color: orange;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -169,10 +187,15 @@ body {
   .row .col-1-of-3 {
     width: calc(((100% - 2 * 6rem) / 3)); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
   .row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+    width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3 * (100% - 3 * 6rem) / 4 + (2 * 6rem)); }
+    width: calc( 3 * (100% - 3 * 6rem) / 4 + (2 * 6rem)); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 45rem 0;
+  margin-top: -25vh; }

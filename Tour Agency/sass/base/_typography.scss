@@ -29,3 +29,19 @@ body {
     animation: moveInRight 1s ease-in-out;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $primary, $primary-dark);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+  &:hover {
+    transform: skewY(2deg) skewY(5deg);
+    text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+  }
+}
