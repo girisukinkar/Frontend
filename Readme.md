@@ -11,3 +11,7 @@ This repository is to push every front end things i learn all the way in 2020 an
 ## 12th July 2020 :not Psuedo Class Grid System
 
     Used :not(:last-child) pseudo class and custom made grid system using float, along with mixin and width calc function
+
+## Scalable images
+
+    Always use percentage for width if possible to scale the images properly

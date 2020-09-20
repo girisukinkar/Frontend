@@ -61,6 +61,7 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
   .heading-primary--main {
@@ -68,12 +69,14 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
+    -webkit-animation: moveInLeft 1s ease-in-out;
     animation: moveInLeft 1s ease-in-out; }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.75rem;
+    -webkit-animation: moveInRight 1s ease-in-out;
     animation: moveInRight 1s ease-in-out; }
 
 .heading-secondary {
@@ -83,6 +86,7 @@ body {
   background-image: linear-gradient(to right, #55c57a, #28b485);
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: all 0.2s;
   letter-spacing: 2px; }
@@ -90,11 +94,27 @@ body {
     transform: skewY(2deg) skewY(5deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.5rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 /*How to use Pseudo elements*/
 .btn:link, .btn:visited {
@@ -107,7 +127,9 @@ body {
   position: relative; }
 
 .btn--animated {
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
   animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
 
 .btn:hover {
@@ -141,6 +163,50 @@ body {
   top: 0;
   z-index: -1;
   transition: all 0.2s; }
+
+.btn-text {
+  transition: all .2s; }
+  .btn-text:link, .btn-text:visited {
+    color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px; }
+  .btn-text:hover {
+    transform: translateY(-4px);
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+  .btn-text:active {
+    transform: translateY(0);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #55c57a;
+      outline-offset: 2rem;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 12; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
 
 .header {
   position: relative;

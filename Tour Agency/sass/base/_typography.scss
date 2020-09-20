@@ -3,7 +3,7 @@ body {
   /* as we are speicifying font-family in body it will be inherited by all child elements throughout  */
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   line-height: 1.7;
   color: $grey-dark;
 }
@@ -11,14 +11,16 @@ body {
 .heading-primary {
   color: $white;
   text-transform: uppercase;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   margin-bottom: 6rem;
   &--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-in-out;
+    -webkit-animation: moveInLeft 1s ease-in-out;
+            animation: moveInLeft 1s ease-in-out;
   }
 
   &--sub {
@@ -26,7 +28,8 @@ body {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-in-out;
+    -webkit-animation: moveInRight 1s ease-in-out;
+            animation: moveInRight 1s ease-in-out;
   }
 }
 
@@ -37,11 +40,25 @@ body {
   background-image: linear-gradient(to right, $primary, $primary-dark);
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip:text;
   color: transparent;
   transition: all 0.2s;
   letter-spacing: 2px;
   &:hover {
     transform: skewY(2deg) skewY(5deg);
     text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+  }
+}
+
+.heading-tertiary{
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph{
+  font-size: 1.5rem;
+  &:not(:last-child){
+    margin-bottom: 3rem;
   }
 }
