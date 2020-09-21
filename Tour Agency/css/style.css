@@ -242,7 +242,7 @@ body {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(128, 128, 128, 0.15); }
+    box-shadow: 0 1.5rem 4rem rgba(128, 128, 128, 0.16); }
     .card__slide--front {
       background-color: #fff; }
     .card__slide--back {
