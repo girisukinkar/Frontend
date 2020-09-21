@@ -249,6 +249,8 @@ body {
       transform: rotateY(180deg); }
       .card__slide--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__slide--back-2 {
+        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
       .card__slide--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card:hover .card__slide--front {
