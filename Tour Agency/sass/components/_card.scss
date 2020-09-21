@@ -1,0 +1,37 @@
+.card{
+   position: relative;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem; //because child has been set absolute the parent loses its height 
+    &__slide{
+        height: 50rem;
+        transition: transform .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(grey,.15);
+
+        &--front{
+            background-color: $white;
+        }
+        &--back{
+            // background-color: linear(t);
+            transform: rotateY(180deg);
+
+            &-1{
+                background-image: linear-gradient(to right bottom, $secondary-light,$secondary-dark);
+            }
+        }
+    }
+    &:hover &__slide--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__slide--back{
+        transform: rotateY(0);
+    }
+}

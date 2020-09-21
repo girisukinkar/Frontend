@@ -15,3 +15,9 @@ This repository is to push every front end things i learn all the way in 2020 an
 ## Scalable images
 
     Always use percentage for width if possible to scale the images properly
+
+## Icon font:  good for scalable icons
+
+    icon fonts can be manipulated using css as they are literally fonts: goto linea.io to download free fonts
+
+    
