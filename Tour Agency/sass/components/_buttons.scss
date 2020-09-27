@@ -40,6 +40,15 @@
     }
   }
 
+  &--green {
+    color: $white;
+    background-color: $primary;
+    &::after {
+      content: "";
+      background-color: $primary;
+    }
+  }
+
   &::after {
     border-radius: 10rem;
     content: "";
