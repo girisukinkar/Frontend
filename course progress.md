@@ -6,3 +6,7 @@
 ## 27 Sep 2020 Episode 40 and 41
 
     completed cards and discovered when using clip-path the overflow property on the parent element does not work
+
+## 11 Oct 2020 Episode 42 43 44
+
+    learned we can use translate instead of padding and margins all the time and object-fit to cover the whole area

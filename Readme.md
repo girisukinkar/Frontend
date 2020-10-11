@@ -15,4 +15,5 @@ Used :not(:last-child) pseudo class and custom made grid system using float, alo
 ## Icon font:  good for scalable icons
 icon fonts can be manipulated using css as they are literally fonts: goto linea.io to download free fonts
 
-    
+### Video sources
+To use dummy videos for the website mockup try coverr.co it provides two versions of every video mp4 and webm
