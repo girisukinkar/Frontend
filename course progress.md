@@ -10,3 +10,10 @@
 ## 11 Oct 2020 Episode 42 43 44
 
     learned we can use translate instead of padding and margins all the time and object-fit to cover the whole area
+
+## 12 Oct 2020  episode 45
+
+    How to use solid-color gradients 
+    How to use  :: input-placeholder pseudo-element
+    How to use :focus, :invalid, placeholder-shown and :checked pseudo classes
+    Custom Radio Buttons
