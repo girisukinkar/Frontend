@@ -17,3 +17,5 @@
     How to use  :: input-placeholder pseudo-element
     How to use :focus, :invalid, placeholder-shown and :checked pseudo classes
     Custom Radio Buttons
+
+    Using important in utilities classes is logical as we want to override the setting at all costs
