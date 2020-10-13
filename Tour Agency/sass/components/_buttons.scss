@@ -1,6 +1,7 @@
 /*How to use Pseudo elements*/
 
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -10,7 +11,13 @@
     display: inline-block;
     transition: all 0.2s ease;
     position: relative;
+  //change for the button element
+  border: none;
+  cursor: pointer;
+    
   }
+
+  
   &--animated {
     -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
             animation: moveInBottom 0.5s ease-out 0.75s;
@@ -26,7 +33,8 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active , &:focus{
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($black, 0.2); /*X Y Blur Color*/
   }

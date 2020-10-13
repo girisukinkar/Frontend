@@ -11,7 +11,7 @@
 
     learned we can use translate instead of padding and margins all the time and object-fit to cover the whole area
 
-## 12 Oct 2020  episode 45 46
+## 12 Oct 2020  episode 45 46 47
 
     How to use solid-color gradients 
     How to use  :: input-placeholder pseudo-element
