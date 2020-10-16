@@ -1,4 +1,5 @@
-## 20 Sep 2020  Current video 36: Building About Section - Part 2,  37: Building About Section - Part 3 completed
+## 20 Sep 2020 Current video 36: Building About Section - Part 2, 37: Building About Section - Part 3 completed
+
 ## 21 Sep 2020 episode 38,39 completed
 
     Learned that perspective css property is used to flip cards or elements. Perspective is always needs to be on parent element and rotates on the childs.
@@ -11,11 +12,16 @@
 
     learned we can use translate instead of padding and margins all the time and object-fit to cover the whole area
 
-## 12 Oct 2020  episode 45 46 47
+## 12 Oct 2020 episode 45 46 47
 
-    How to use solid-color gradients 
+    How to use solid-color gradients
     How to use  :: input-placeholder pseudo-element
     How to use :focus, :invalid, placeholder-shown and :checked pseudo classes
     Custom Radio Buttons
 
     Using important in utilities classes is logical as we want to override the setting at all costs
+
+## 17th Oct 2020 episode 48
+
+    Made footer
+    use inline-block when using border for element that must be exact its width
