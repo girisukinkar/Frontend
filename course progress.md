@@ -25,3 +25,9 @@
 
     Made footer
     use inline-block when using border for element that must be exact its width
+
+## 18th Oct 2020 Episode 49
+
+    Making custom animations
+    transform origin
+    How to create amazing effects
