@@ -21,5 +21,5 @@ To use dummy videos for the website mockup try coverr.co it provides two version
 ## :target pseudo class to make pure css modal
 using anchor tag we can manipulate the css without the need of js
 
-## Display None transitions conflict
+## display:none transitions conflict
 Display none does not allow to use animations but there is a turnaround for that which is using opacity : 0 and visibility : hidden
