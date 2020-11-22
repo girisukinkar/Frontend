@@ -31,3 +31,9 @@
     Making custom animations
     transform origin
     How to create amazing effects
+
+## 21st and 22nd Nov 2020 Episode 52 
+    
+    How to create pure css popup
+    -You can split a box into two using width 33% and 66% with floats or you can use display:table and use table-cell property , with that you will be able to use verticle-align:center or bottom to position the element as well
+    - using anchor tag and :target pseudo class we can control the css of the element
