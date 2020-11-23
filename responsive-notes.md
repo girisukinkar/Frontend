@@ -21,3 +21,5 @@ If we don’t apply a media type, the @ media rule selects all types of devices 
     2.print — for printers
     3.screen — for computer screens, tablets and, smart-phones
     4.speech — for screen readers that “read” the page out loud
+
+## Rule 5: Something
