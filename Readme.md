@@ -24,3 +24,5 @@ using anchor tag we can manipulate the css without the need of js
 ## display:none transitions conflict
 Display none does not allow to use animations but there is a turnaround for that which is using opacity : 0 and visibility : hidden
 
+## How to check website on multiple devies at once
+sizzy.co

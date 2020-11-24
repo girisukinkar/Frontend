@@ -9,6 +9,18 @@
        background-color: rgba($white,.6);
        transform:skewX(-12deg);
 
+       @include respond(tab-port){
+           width: 100%;
+           padding: 4rem;
+            padding-left: 7rem;
+       }
+       @include respond(phone){
+       
+        transform: skewX(0);
+        
+    }
+
+
        & > * {
            transform: skewX(12deg);
        }
@@ -26,6 +38,12 @@
                    transform: translateX(-3rem) skewX(12deg);
 
                    position: relative;
+                   
+                   @include respond(phone){
+       
+                    transform: translateX(-3rem) skewX(0);
+                    
+                }
        }
 
        &__image{
@@ -37,6 +55,12 @@
 
        &__text{
         transform: skewX(12deg);
+
+        @include respond(phone){
+       
+            transform:  skewX(0);
+            
+        }
       }
     &__caption{
         position: absolute;

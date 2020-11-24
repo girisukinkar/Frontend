@@ -31,12 +31,22 @@
         width: 33.333333%;
        display: table-cell;
        
+       @include respond(tab-land){
+           display: none;
+       }
+       
     }
     &__right{
         width: 66.6666667%;
        display: table-cell;
        vertical-align: middle;
        padding: 3rem 5rem;
+       @include respond(tab-port){
+        width: 100%;
+        padding: 3rem 4rem;
+    }
+
+   
     }
 
  
@@ -55,6 +65,11 @@
                   column-gap: 4rem ;
                   -moz-column-rule: 1px solid $grey-light-1;          
                                column-rule: 1px solid $grey-light-1;
+
+                               @include respond(phone){
+                                -moz-column-count: 1;
+             column-count: 1;
+                            }
     }
 
 
