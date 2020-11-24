@@ -22,4 +22,10 @@ If we don’t apply a media type, the @ media rule selects all types of devices 
     3.screen — for computer screens, tablets and, smart-phones
     4.speech — for screen readers that “read” the page out loud
 
-## Rule 5: Something
+## Rule 5:  Writing Media Queries
+
+    For mobile
+    Potrait Tablet
+    Landscape Tablet
+    Desktop (15 inch macbook with resolution 1440 x 900)
+    Big Desktop
