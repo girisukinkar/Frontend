@@ -38,10 +38,9 @@
     -You can split a box into two using width 33% and 66% with floats or you can use display:table and use table-cell property , with that you will be able to use verticle-align:center or bottom to position the element as well
     - using anchor tag and :target pseudo class we can control the css of the element
 
-## 23rd Nov 2020 Episode 54,55,56
+## 23rd,24th Nov 2020 Episode 54,55,56,57,58
 
     Writing better media queries using @mixins and @if Directives
     We use em because rem does may break on some browsers and EM basically takes the root font-size which is 16px, 
     thus we can get a range dynamically. 
     Instead of writing  @media max-width: 600px we calculate EM by formula (max-width/ root-font-size) eg. (600px / 16px) = 37.5em
-    
