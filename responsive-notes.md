@@ -23,9 +23,13 @@ If we don’t apply a media type, the @ media rule selects all types of devices 
     4.speech — for screen readers that “read” the page out loud
 
 ## Rule 5:  Writing Media Queries
+    
+You need to write for such sizes
 
     For mobile
     Potrait Tablet
     Landscape Tablet
     Desktop (15 inch macbook with resolution 1440 x 900)
     Big Desktop
+
+    And while writing media queries make sure larger resolution sizes comes first then smaller ones 

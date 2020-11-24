@@ -41,4 +41,7 @@
 ## 23rd Nov 2020 Episode 54,55,56
 
     Writing better media queries using @mixins and @if Directives
+    We use em because rem does may break on some browsers and EM basically takes the root font-size which is 16px, 
+    thus we can get a range dynamically. 
+    Instead of writing  @media max-width: 600px we calculate EM by formula (max-width/ root-font-size) eg. (600px / 16px) = 37.5em
     
