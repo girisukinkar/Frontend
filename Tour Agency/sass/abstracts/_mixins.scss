@@ -33,6 +33,9 @@ $breakpoint argument choices :
 -tab-port
 -tab-land
 - big-desktop
+
+ORDER of writing media queries
+Base + typography > general layout+ grid > page layout
 */
 
 //Since rem fails in few browsers and lots of experts have suggested we go with em 1em = 16px which is root set by the user in browser so divide the resolition / font-size to get the rem

@@ -32,4 +32,8 @@ You need to write for such sizes
     Desktop (15 inch macbook with resolution 1440 x 900)
     Big Desktop
 
-    And while writing media queries make sure larger resolution sizes comes first then smaller ones 
+For Desktop First Approach
+    Make sure larger resolution sizes comes first then smaller ones 
+
+For Mobile First Approach
+    Make sure smaller resolution sizes comes first then larger ones 

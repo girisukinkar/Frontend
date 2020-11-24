@@ -1,5 +1,5 @@
 body {
-  padding: 3rem;
+
   /* as we are speicifying font-family in body it will be inherited by all child elements throughout  */
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -14,6 +14,9 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   margin-bottom: 6rem;
+
+
+
   &--main {
     display: block;
     font-size: 6rem;
@@ -21,6 +24,11 @@ body {
     letter-spacing: 3.5rem;
     -webkit-animation: moveInLeft 1s ease-in-out;
             animation: moveInLeft 1s ease-in-out;
+
+    @include respond(phone){
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -30,7 +38,12 @@ body {
     letter-spacing: 1.75rem;
     -webkit-animation: moveInRight 1s ease-in-out;
             animation: moveInRight 1s ease-in-out;
-  }
+ 
+            @include respond(phone){
+              letter-spacing: .5rem;
+              
+            }
+          }
 }
 
 .heading-secondary {
@@ -47,6 +60,14 @@ body {
   &:hover {
     transform: skewY(2deg) skewY(5deg);
     text-shadow: 0.5rem 1rem 2rem rgba($black, 0.2);
+  }
+
+  @include respond(tab-port){
+    font-size: 3rem;
+  }
+
+  @include respond(phone){
+    font-size: 2.5rem;
   }
 }
 
