@@ -26,3 +26,9 @@ Display none does not allow to use animations but there is a turnaround for that
 
 ## How to check website on multiple devies at once
 sizzy.co
+
+## What are 2x Screens
+Macbook Retina display has high resolution which uses 2 physical pixels to display 1 pixel thats why they are called 2x Screens
+
+## Responsive images when to use them
+the way to use them
