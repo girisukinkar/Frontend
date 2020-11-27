@@ -31,4 +31,4 @@ sizzy.co
 Macbook Retina display has high resolution which uses 2 physical pixels to display 1 pixel thats why they are called 2x Screens
 
 ## Responsive images when to use them
-the way to use them
+Best way is to use sprite images
